@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Change the width below to just wider than your form's width
+to optimize its initial scale on Apple iOS  and Android devices -->
+<meta name = "viewport" content="width=640">
+
+<title>MinnPost e-mail newsletters</title>
+
+
+<style type="text/css">
+<!--
+body {background-color:#FFFFFF; font-family:verdana; font-size:12px; text-align:center; min-width: 500px; margin:50 0 0 0;}
+p {line-height:18px;}
+.container {background-color:#FFFFFF; width:400px; border:1px solid #999999; padding:5 5 15 5; margin-left:auto; margin-right:auto;}
+.pageTitle {background-color:#DDDDDD; padding:8px; font-size:16px; font-weight:bold; color:#000000; text-align:left;}
+.pageTitleAlert {background-color:#FF0000; padding:8px; font-size:16px; font-weight:bold; color:#FFFFFF; text-align:left;}
+.pageTitleSuccess {background-color:#33CC00; padding:8px; font-size:16px; font-weight:bold; color:#FFFFFF; text-align:left;}
+.formLabel {font-size:13px;}
+.error {color:#FF0000; font-weight:bold; font-size:11px;}
+.small {font-size:11px;}
+-->
+</style>
+</head>
+<body>
+
+<div class="container">
+<div class="pageTitle">MinnPost e-mail newsletters</div>
+<p>Required fields are <b>bold...</b></p>
+<form action="http://minnpost.us1.list-manage.com/profile/post" method="post">
+<input type="hidden" name="u" value="97f7a4b7244e73cbb7fd521b2">
+<input type="hidden" name="id" value="3631302e9c">
+<input type="hidden" name="e" value="*|UNIQID|*">
+<table cellpadding="5" cellspacing="0" border="0" align="center">
+
+<tr>
+<td align="right" class="formLabel"><strong>Email Address</strong> <span class="asterisk">*</span></td>
+<td align="left"><input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="*|MERGE0|*">
+<br><span class="error">*|HTML:EMAILERROR|*</span></td>
+</tr>
+
+
+
+
+    *|FOREACH:INTEREST_GROUPINGS|*
+    *|IFNOT:PUBLIC|*
+    <tr valign="top" id="merge-interests-100-*|GROUPING_ID|*" style="display:none;">
+    *|ELSE:|*
+    <tr valign="top" id="merge-interests-100-*|GROUPING_ID|*">
+    *|END:IF|*
+        <td align="right" class="formLabel">
+            *|LABEL|*
+        </td>
+        <td align="left">
+            *|HTML:FIELDS|*
+        </td>
+    </tr>
+    *|END:FOREACH|*
+
+
+<tr>
+<td align="right" class="formLabel">Preferred format:</td>
+<td align="left" class="small"><input type="radio" name="EMAILTYPE" value="html" *|EMAIL_TYPE_HTML_CHECKED|*>HTML&nbsp; &nbsp;<input type="radio" name="EMAILTYPE" value="text" *|EMAIL_TYPE_TEXT_CHECKED|*>Text&nbsp; &nbsp;<input type="radio" name="EMAILTYPE" value="mobile" *|EMAIL_TYPE_MOBILE_CHECKED|*>Mobile</td>
+</tr>
+
+
+<tr>
+<td align="right">&nbsp;</td>
+<td align="left"><INPUT TYPE="submit" VALUE="Update Profile">&nbsp; or &nbsp;
+<a href="/unsubscribe?u=97f7a4b7244e73cbb7fd521b2&id=3631302e9c&e=*|UNIQID|*">Unsubscribe</a>
+</tr>
+</table>
+</form>
+</div>
+
+
+</body>
+</html>
