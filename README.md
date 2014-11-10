@@ -1,0 +1,2 @@
+minnpost-email-templates
+========================
