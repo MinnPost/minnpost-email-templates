@@ -1,0 +1,28 @@
+MinnPost email newsletters
+------------------------------------------------
+
+Your subscription to our list has been confirmed.
+Below is a copy of the information you submitted to us...
+
+-----------------------------------
+
+
+Email Address: *|EMAIL|*
+
+Donor: *|MMERGE1|*
+
+GTM List: *|MMERGE2|*
+
+Email: *|MMERGE3|*
+
+Sustaining Member: *|MMERGE4|*
+
+
+Subscribe me to these MinnPost email newsletters:: *|INTERESTS_3|*
+
+
+-----------------------------------
+
+If at any time you wish to stop receiving our emails,
+you can unsubscribe by visiting this link:
+http://minnpost.us1.list-manage.com/unsubscribe?u=97f7a4b7244e73cbb7fd521b2&id=3631302e9c&e=*|UNIQID|*
