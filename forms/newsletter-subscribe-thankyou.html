@@ -1,33 +1,85 @@
-<html>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!-- Change the width below to just wider than your form's width
-    to optimize its initial scale on Apple iOS  and Android devices -->
-    <meta name = "viewport" content="width=640">
+    <meta charset="utf-8">
+	<title>MinnPost - Thank you for subscribing</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Almost finished...</title>
-<style>
-<!--
-body {background-color:#ffffff; font-family:verdana; font-size:12px; text-align:center; min-width: 500px; margin:50 0 0 0;}
-p {line-height:18px;}
-.container {background-color:#ffffff; width:400px; border:1px solid #999999; padding:5 5 15 5; margin-left:auto; margin-right:auto;}
-.pagetitle {background-color:#dddddd; padding:8px; font-size:16px; font-weight:bold; color:#000000; text-align:left;}
-.pagetitlealert {background-color:#ff0000; padding:8px; font-size:16px; font-weight:bold; color:#ffffff; text-align:left;}
-.pagetitlesuccess {background-color:#33cc00; padding:8px; font-size:16px; font-weight:bold; color:#ffffff; text-align:left;}
-.formlabel {font-size:13px;}
-.error {color:#ff0000; font-weight:bold; font-size:11px;}
-.small {font-size:11px;}
--->
-</style>
+    <link rel="stylesheet" href="//s3.amazonaws.com/data.minnpost/projects/minnpost-styles/0.0.4/minnpost-styles.css">
+	<style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            max-height: 100%;
+        }
+        .mp header {
+            margin-bottom: 1.5em;
+        }
+        .mp section {
+            margin-bottom: 2.5em;
+        }
+        header a, header img {
+            display: inline-block;
+        }
+        header > a.logo {
+            /*height: 30px;*/
+            margin: 0.5em;
+            width: auto;
+        }
+        .mp table {
+            margin-bottom: 2.5em;
+            width: auto;
+        }
+        table caption {
+            text-align: left;
+        }
+        table .subscribe {
+            width: 1em;
+        }
+        table .name {
+            width: 45%;
+        }
+        .mp .xlarge {
+            margin-bottom: 0.25em;
+        }
+        .mp small {
+            display: block;
+            margin-top: 0.5em;
+        }
+        .mp label {
+            font-weight: normal;
+            display: block;
+        }
+        .mp label.required {
+            font-weight: bold;
+        }
+
+	.mp .pageTitleAlert {background-color:#FF0000; padding:8px; color:#FFFFFF;}
+	.mp .pageTitleSuccess {background-color:#469B61; padding:8px; color:#fff;}
+	.error {color:#FF0000; font-weight:bold; font-size:11px;}
+	</style>
+
 </head>
-<body>
+<body class="mp">
 
-<div class="container">
-<div class="pageTitleAlert">Almost finished. </div>
-<p>We need to confirm your email address.</p>
-<p>To complete the subscription process, please click the link in the email we just sent you.</p>
-</div>
+	<header class="minnpost-page-container">
+        <a href="#" class="logo clearfix">
+            <img src="http://www.minnpost.com/sites/default/themes/siteskin/inc/images/logo.png" alt="MinnPost">
+        </a>
+        <h1>Thank you for subscribing</h1>
+    </header>
 
+    <main class="minnpost-page-container">
+
+    	<h1 class="pageTitleAlert">Almost finished.</h1>
+    	<p class="xlarge">We need to confirm your email address.</p>
+    	<p>To complete the subscription process, please click the link in the email we just sent you.</p>
+    </main>
 
 </body>
 </html>
