@@ -9,17 +9,14 @@ Below is a copy of the information you submitted to us...
 
 Email Address: *|EMAIL|*
 
-Donor: *|MMERGE1|*
+First Name: *|FNAME|*
 
-GTM List: *|MMERGE2|*
-
-Email: *|MMERGE3|*
-
-Sustaining Member: *|MMERGE4|*
+Last Name: *|LNAME|*
 
 
-Subscribe me to these MinnPost email newsletters:: *|INTERESTS_3|*
+I would like to receive the following email newsletters: *|INTERESTS_3|*
 
+MinnPost may periodically contact me about:  *|INTERESTS_5|*
 
 -----------------------------------
 
