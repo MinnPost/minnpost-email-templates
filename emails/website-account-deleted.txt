@@ -1,0 +1,3 @@
+!username,
+
+Your account on !site has been deleted.
