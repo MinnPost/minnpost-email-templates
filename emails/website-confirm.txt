@@ -1,12 +1,9 @@
 !username,
 
-Thank you for registering at !site. You may now log in by clicking on this link or copying and pasting it in your browser:
+Thank you for creating a free !site account. You can use it to manage your reading and communication preferences, and to see new stories that match your interests.
 
-!login_url
+If you have not set up your preferences yet, go to !edit_uri/preferences.
 
-This is a one-time login, so it can be used only once.
-
-After logging in, you will be redirected to !edit_uri so you can change your password.
-
+If you are a !site Member, you'll be able to use some of your benefits from your account. If not, why not join today at http://www.minnpost.com/support?
 
 --  !site team
