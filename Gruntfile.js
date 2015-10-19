@@ -7,8 +7,6 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     uncss: {
       dist: {
-        //src: ['templates/test1.html'],
-        //dest: 'tidy/css/test1.css',
         files: [{
             expand: true,        // Enable dynamic expansion.
             cwd: 'templates',  // Src matches are relative to this path.
@@ -20,9 +18,13 @@ module.exports = function(grunt) {
     },
     processhtml: {
       dist: {
-        files: {
-          'tidy/test1.html': ['templates/test1.html']
-        }
+        files: [{
+          expand: true,     // Enable dynamic expansion.
+          cwd: 'templates/',      // Src matches are relative to this path.
+          src: ['**/*.html'], // Actual pattern(s) to match.
+          dest: 'tidy/',   // Destination path prefix.
+          ext: '.html',   // Dest filepaths will have this extension.
+        }]
       }
     },
     premailer: {
@@ -30,9 +32,13 @@ module.exports = function(grunt) {
         options: {
           verbose: true
         },
-        files: {
-          'prod/test1.html': ['tidy/test1.html']
-        }
+        files: [{
+          expand: true,     // Enable dynamic expansion.
+          cwd: 'tidy/',      // Src matches are relative to this path.
+          src: ['**/*.html'], // Actual pattern(s) to match.
+          dest: 'prod/',   // Destination path prefix.
+          ext: '.html',   // Dest filepaths will have this extension.
+        }]
       }
     },
     watch: {
