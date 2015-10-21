@@ -6,6 +6,20 @@ table, tr, td {
   vertical-align: middle;
 }
 
+.block-grid.two-up td {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.two-up td {
+  width:300px;
+}
+
+.block-grid td.stories, .block-grid td.stories td {
+  width:270px;
+  margin-right: 6px;
+}
+
 table.header {
   border-bottom: 10px solid #000;
   margin-bottom: 5px;
@@ -45,7 +59,8 @@ h1, .h1 {
 }
 h2, .h2 {
   color:#801019;
-  display:block;font-family:Arial;
+  display:block;
+  font-family:Arial;
   font-size:16px;
   font-weight:bold;
   line-height:100%;
@@ -135,31 +150,31 @@ a:visited {
   content: " ▸";
 } 
 
-.row.main {
+.block-grid.main {
   border-bottom: 2px solid #cccccf;
 }
 
-.row.main.top-stories {
+/*.row.main.top-stories {
   border-top: 2px solid #cccccf;
-}
+}*/
 
-.row.main.supp table.bodyTable {
+.block-grid.main.supp table.bodyTable {
   margin-bottom: 15px !important;
 }
 
-.row.main.supp .last {
+.block-grid.main.supp .more {
   vertical-align: top;
 }
 
-.row.footer img {
+.block-grid.footer img {
   display: inline;
   float: none;
   clear: none;
 }
-.row.footer p {
+.block-grid.footer p {
   text-align: center;
 }
-.row.footer a {
+.block-grid.footer a {
   color: #801019;
   font-family: Helvetica, Arial, Geneva, sans-serif;
   font-size: 13px;
@@ -227,11 +242,14 @@ table.more h3, table.more .h3 {
   table.header td.last td {
     text-align: left;
   }
-  .row.main {
+  table[class="container"] .block-grid > tbody > tr > td {
+    width: 100% !important;
+    padding: 0 10px 0 !important;
+  }
+  .block-grid.main {
     border-bottom: 0 !important;
   }
-
-  .row.main.top-stories {
+  .block-grid.main.top-stories {
     border-top: 0 !important;
   }
   table.ad {
