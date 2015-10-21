@@ -1,4 +1,11 @@
 /* Your custom styles go here */
+body {
+  color: #1a1818;
+}
+table, tr, td {
+  vertical-align: middle;
+}
+
 table.header {
   border-bottom: 10px solid #000;
   margin-bottom: 5px;
@@ -21,19 +28,82 @@ table.header td.last td {
 }
 
 h1, .h1 { 
-  color:#1a1818; display:block; font-family:Arial;  font-size:16px; font-weight:bold; line-height:100%; margin-top:0; margin-right:0; margin-bottom:10px; margin-left:0;  text-align:left;  
+  color:#1a1818;
+  display:block;
+  font-family:Arial;
+  font-size:16px;
+  font-weight:bold;
+  line-height:100%;
+  margin-top:0;
+  margin-right:0;
+  margin-bottom:10px;
+  margin-left:0;
+  text-align:left; 
+  font-family: Helvetica, Arial, Geneva, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase; 
 }
 h2, .h2 {
-  color:#801019; display:block; font-family:Arial;  font-size:16px; font-weight:bold; line-height:100%; margin-top:0; margin-right:0; margin-bottom:20px; margin-left:0;  text-align:left;
+  color:#801019;
+  display:block;font-family:Arial;
+  font-size:16px;
+  font-weight:bold;
+  line-height:100%;
+  margin-top:0;
+  margin-right:0;
+  margin-bottom:20px;
+  margin-left:0;
+  text-align:left;
 }
 h3,.h3 {
-  color:#1a1818; display:block; font-family:Arial;  font-size:16px; font-weight:bold; line-height:100%; margin-top:0; margin-right:0; margin-bottom:10px; margin-left:0;  text-align:left;
+  color:#1a1818;
+  display:block;
+  font-family:Arial;
+  font-size:16px;
+  font-weight:bold;
+  line-height:100%;
+  margin-top:0;
+  margin-right:0;
+  margin-bottom:10px;
+  margin-left:0;
+  text-align:left;
+
+  font-family: Helvetica, Arial, Geneva, sans-serif;
+  font-size: 22px;
+  padding: 0;
 }
 h4, .h4 {
-  color:#555555; display:block; font-family:Helvetica; font-size:10px; font-weight:normal; line-height:100%; margin-top:0; margin-right:0; margin-bottom:5px; margin-left:0; text-align:left; text-transform: uppercase;
+  color:#555556;
+  display:block;
+  font-family: Helvetica, Arial, Geneva, sans-serif;
+  font-size:10px;
+  font-weight:normal;
+  line-height:100%;
+  margin-top:0;
+  margin-right:0;
+  margin-bottom:5px;
+  margin-left:0;
+  text-align:left;
+  text-transform: uppercase;
 }
 h5, .h5 {
-  color:#1A1818; display:block; font-family:Helvetica; font-size:10px; font-weight:bold; line-height:100%; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0; text-align:left; text-transform: uppercase;
+  color:#1A1818;
+  display:block;
+  font-family: Helvetica, Arial, Geneva, sans-serif;
+  font-size:10px;
+  font-weight:bold;
+  line-height:100%;
+  margin-top:0px;
+  margin-right:0;
+  margin-bottom:5px;
+  margin-left:0;
+  text-align:left;
+  text-transform: uppercase;
+}
+.bodyTable div p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 20.787px;
 }
 
 a {
@@ -57,12 +127,48 @@ a:visited {
 
 .main .moreLink {
   color: #801019 !important;
-  font-family: Helvetica;
-  font-size:12px;
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
+  font-size: 16px !important;
+  line-height: 20.787px !important;
 }
 .main .moreLink:after {
   content: " ▸";
 } 
+
+.row.main {
+  border-bottom: 2px solid #cccccf;
+}
+
+.row.main.top-stories {
+  border-top: 2px solid #cccccf;
+}
+
+.row.main.supp table.bodyTable {
+  margin-bottom: 15px !important;
+}
+
+.row.main.supp .last {
+  vertical-align: top;
+}
+
+.row.footer img {
+  display: inline;
+  float: none;
+  clear: none;
+}
+.row.footer p {
+  text-align: center;
+}
+.row.footer a {
+  color: #801019;
+  font-family: Helvetica, Arial, Geneva, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+}
 
 h1 a, 
 h2 a, 
@@ -112,7 +218,7 @@ table.more h3, table.more .h3 {
 
 @media only screen and (max-width: 600px) {
   table.header {
-    border-bottom: 0;
+    border-bottom: 0 !important;
     margin-bottom: 5px;
   }
   table.header .logo {
@@ -120,5 +226,15 @@ table.more h3, table.more .h3 {
   }
   table.header td.last td {
     text-align: left;
+  }
+  .row.main {
+    border-bottom: 0 !important;
+  }
+
+  .row.main.top-stories {
+    border-top: 0 !important;
+  }
+  table.ad {
+    margin-bottom: 15px !important;
   }
 }
