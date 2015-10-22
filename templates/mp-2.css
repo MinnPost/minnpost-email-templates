@@ -237,6 +237,10 @@ h6 a:visited {
 .footer p {
   padding-top: 10px;
 }
+.footer .address {
+	font-size: 12px;
+	Margin-bottom: 15px;
+}
 /* end story and ads */
 
 /* more stories */
