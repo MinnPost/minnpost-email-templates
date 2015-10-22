@@ -1,0 +1,313 @@
+/* capitalize Margin so outlook does not strip it out */
+
+/* Basics */
+body {
+  Margin: 0;
+  padding: 0;
+  min-width: 100%;
+  background-color: #fff;
+}
+table {
+  border-spacing: 0;
+  font-family: Helvetica, Arial, Geneva, sans-serif;
+  color: #1a1818;
+}
+td {
+	padding: 0;
+}
+img {
+	border: 0;
+}
+.wrapper {
+	width: 100%;
+	table-layout: fixed;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+.webkit {
+	max-width: 600px;
+}
+/* end basics */
+
+.outer {
+	Margin: 0 auto;
+	width: 100%;
+	max-width: 600px;
+}
+
+/* generic */
+.content .inner {
+	padding: 10px 0;
+}
+p {
+	Margin: 0 0 10px 0;
+	padding: 0;
+}
+a {
+  color: #1A1818; 
+  text-decoration: none;
+}
+a:hover { 
+  color: #1A1818 !important;
+  text-decoration: underline !important;
+}
+a:active { 
+  color: #1A1818 !important;
+  text-decoration: underline !important;
+}
+a:visited { 
+  color: #1A1818 !important;
+}
+
+h1, .h1 { 
+  color:#1a1818;
+  display:block;
+  font-family:Arial;
+  font-size:16px;
+  font-weight:bold;
+  line-height:100%;
+  Margin: 0 0 10px 0;
+  text-align:left; 
+  font-family: Helvetica, Arial, Geneva, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase; 
+}
+h2, .h2 {
+  color:#801019;
+  display:block;
+  font-family: Helvetica, Arial, Geneva, sans-serif;
+  font-size:16px;
+  font-weight:bold;
+  line-height:100%;
+  Margin: 0 0 10px 0;
+  text-align:left;
+}
+h3, .h3 {
+  color:#1a1818;
+  display:block;
+  font-family:Arial;
+  font-size:16px;
+  font-weight:bold;
+  line-height:100%;
+  Margin: 0 0 10px 0;
+  text-align:left;
+  font-family: Helvetica, Arial, Geneva, sans-serif;
+  font-size: 22px;
+  padding: 0;
+}
+h4, .h4 {
+  color:#555556;
+  display:block;
+  font-family: Helvetica, Arial, Geneva, sans-serif;
+  font-size:10px;
+  font-weight:normal;
+  line-height:100%;
+  Margin: 0 0 5px 0;
+  text-align:left;
+  text-transform: uppercase;
+}
+h5, .h5 {
+  color:#1A1818;
+  display:block;
+  font-family: Helvetica, Arial, Geneva, sans-serif;
+  font-size:10px;
+  font-weight:bold;
+  line-height:100%;
+  Margin: 0 0 5px 0;
+  text-align:left;
+  text-transform: uppercase;
+}
+h1 a, 
+h2 a, 
+h3 a, 
+h4 a, 
+h5 a, 
+h6 a {
+  color: #1A1818;
+}
+h1 a:active, 
+h2 a:active,  
+h3 a:active, 
+h4 a:active, 
+h5 a:active, 
+h6 a:active { 
+  color: #1A1818 !important; 
+}
+h1 a:visited, 
+h2 a:visited,  
+h3 a:visited, 
+h4 a:visited, 
+h5 a:visited, 
+h6 a:visited { 
+  color: #1A1818 !important; 
+}
+/* end generic */
+
+/* overrides */
+.bodyTable td {
+  padding: 0;
+}
+.bodyTable div p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 20.787px;
+}
+.content .moreLink {
+  color: #801019 !important;
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
+  font-size: 16px !important;
+  line-height: 20.787px !important;
+}
+.content .moreLink:after {
+  content: " ▸";
+}
+/* end overrides */
+
+/*Two column layout*/
+.two-column {
+	text-align: center;
+	font-size: 0;
+}
+.two-column .column {
+	width: 100%;
+	max-width: 280px;
+	Margin-right: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.two-column .column.ad, .two-column .column.more {
+	max-width: 300px;
+	Margin-right: 0;
+}
+.two-column.header .column {
+	vertical-align: bottom;
+	max-width: 390px;
+	Margin-right: 0;
+}
+.two-column.header .column.date {
+	max-width: 210px;
+}
+.contents {
+	width: 100%;
+}
+.two-column .contents {
+	font-size: 16px;
+	text-align: left;
+}
+.two-column .text {
+	padding-top: 10px;
+}
+.two-column.supp .column {
+	vertical-align: top;
+}
+
+/* header */
+.two-column.header {
+	border-bottom: 10px solid #000;
+}
+.two-column.header .logo td {
+	font-size: 0;
+}
+.two-column.header img {
+	width: 100%;
+	max-width: 390px;
+	height: auto;
+}
+.two-column.header .date td {
+  width: 100%;
+  font-family: Helvetica, Arial, Geneva, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 100%;
+  padding: 10px 0 5px 0;
+  text-align: right;
+}
+/* end header */
+
+/* story and ads */
+.content.story .story, .content.supp .story, .content.supp {
+  border-bottom: 2px solid #cccccf;
+  padding-bottom: 10px;
+  Margin-bottom: 24px;
+}
+.content.supp .story.story-last {
+  border-bottom: none;
+  Margin-bottom: 0;
+}
+.footer p {
+  padding-top: 10px;
+}
+/* end story and ads */
+
+/* more stories */
+table.more td, table.more td div.inner {
+  padding: 15px;
+}
+table.more td {
+  background: #f0f0f5;
+  border: 1px solid #cccccf;
+  width: auto;
+  max-width: 100%;
+}
+table.more td div.inner {
+  background: #fff;
+}
+table.more h3, table.more .h3 {
+  color:#1a1818; display:block; font-family:Georgia; font-size:13px; font-weight:normal; line-height:100%;  margin-top:0; margin-right:0; margin-bottom:15px; margin-left:0;  text-align:left;
+}
+/* end more stories */
+
+/* footer */
+.footer img {
+  display: inline;
+  float: none;
+  clear: none;
+}
+.footer p {
+  text-align: center;
+}
+.footer a {
+  color: #801019;
+  font-family: Helvetica, Arial, Geneva, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+.footer a.support {
+  padding-left: 15px;
+}
+/* end footer */
+
+
+@media only screen and (max-width: 600px) {
+
+  .two-column.header {
+    border-bottom: none !important;
+  }
+  .two-column.header .logo td {
+    border-bottom: 10px solid #000 !important;
+    margin-bottom: 5px !important;
+  }
+  .two-column.header .date, .two-column.header .date td {
+    text-align: left !important;
+  }
+
+
+
+  .two-column .column, .two-column .column.ad, .two-column .column.more, .two-column .column.date, .two-column .column.logo {
+		max-width: 90% !important;
+		Margin-right: auto !important;
+		Margin-left: auto !important;
+	}
+
+
+  .content.story .ad {
+	  border-bottom: 2px solid #cccccf !important;
+	  padding-bottom: 10px !important;
+	  Margin-bottom: 10px !important;
+	}
+
+}
