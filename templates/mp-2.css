@@ -277,7 +277,14 @@ table.more td div.inner {
   background: #fff;
 }
 table.more h3, table.more .h3 {
-  color:#1a1818; display:block; font-family:Georgia; font-size:13px; font-weight:normal; line-height:100%;  margin-top:0; margin-right:0; margin-bottom:15px; margin-left:0;  text-align:left;
+  color:#1a1818;
+  display:block;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size:13px;
+  font-weight:normal;
+  line-height:100%;
+  margin: 0 0 15px 0;
+  text-align:left;
 }
 /* end more stories */
 
