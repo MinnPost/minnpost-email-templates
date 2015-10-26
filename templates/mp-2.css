@@ -175,7 +175,7 @@ h6 a:visited {
   background-color: #801019;
 }
 .content .button.read-story td td a {
-  color: #fff !important;
+  color: #fff;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 16px;
   text-decoration: none;
