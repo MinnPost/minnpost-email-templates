@@ -246,7 +246,7 @@ h6 a:visited {
 
 /* story and ads */
 .content.story .story, .content.supp .story, .content.supp {
-  border-bottom: 2px solid #cccccf;
+  border-bottom: 2px solid #cccccf !important;
   padding-bottom: 10px;
   Margin-bottom: 24px;
 }
