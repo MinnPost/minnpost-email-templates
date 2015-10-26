@@ -25,12 +25,6 @@ img {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
-.webkit {
-	max-width: 600px;
-}
-.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
-  line-height: 100%;
-}
 p {
   Margin:0;
   padding:0;
