@@ -5,7 +5,7 @@ body {
   Margin: 0;
   padding: 0;
   min-width: 100%;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 table {
   border-spacing: 0;
@@ -13,7 +13,8 @@ table {
   color: #1a1818;
 }
 td {
-	padding: 0;
+  padding: 0;
+  Margin: 0;
 }
 img {
 	border: 0;
@@ -31,14 +32,14 @@ img {
   line-height: 100%;
 }
 p {
-  margin:0;
+  Margin:0;
   padding:0;
-  margin-bottom:0;
+  Margin-bottom:0;
 }
 /* end basics */
 
 .outer {
-	margin: 0 auto;
+	Margin: 0 auto;
 	width: 100%;
 	max-width: 600px;
 }
@@ -54,14 +55,6 @@ p {
 a {
   color: #1A1818;
   text-decoration: none;
-}
-a[x-apple-data-detectors] {
-  color: #1A1818 !important;
-  text-decoration: none !important;
-  font-size: inherit !important;
-  font-family: inherit !important;
-  font-weight: inherit !important;
-  line-height: inherit !important;
 }
 a:hover { 
   color: #1A1818 !important;
@@ -175,7 +168,7 @@ h6 a:visited {
   background-color: #801019;
 }
 .content .button.read-story td td a {
-  color: #fff;
+  color: #ffffff;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 16px;
   text-decoration: none;
@@ -185,6 +178,10 @@ h6 a:visited {
   padding: 8px 12px;
   border: 1px solid #801019;
   display: inline-block;
+}
+.content .button.read-story td td a:link, .content .button.read-story td td a:hover, .content .button.read-story td td a:visited, .content .button.read-story td td a:active {
+  color: #ffffff !important;
+  text-decoration: none !important;
 }
 /*.content .moreLink:after {
   content: " ▸";
@@ -282,7 +279,7 @@ table.more td {
   max-width: 100%;
 }
 table.more td div.inner {
-  background: #fff;
+  background: #ffffff;
 }
 table.more h3, table.more .h3 {
   color:#1a1818;
@@ -342,8 +339,7 @@ table.more h3, table.more .h3 {
 		Margin-left: auto !important;
 	}
 
-
-  .content.story .ad {
+  .content.story .ad, div.story.story-last {
 	  border-bottom: 2px solid #cccccf !important;
 	  padding-bottom: 10px !important;
 	  Margin-bottom: 10px !important;
