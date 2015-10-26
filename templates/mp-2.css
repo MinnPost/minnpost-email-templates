@@ -11,6 +11,8 @@ table {
   border-spacing: 0;
   font-family: Helvetica, Arial, Geneva, sans-serif;
   color: #1a1818;
+  mso-table-lspace:0pt;
+  mso-table-rspace:0pt;
 }
 td {
   padding: 0;
@@ -173,7 +175,7 @@ h6 a:visited {
   border: 1px solid #801019;
   display: inline-block;
 }
-.content .button.read-story td td a:link, .content .button.read-story td td a:hover, .content .button.read-story td td a:visited, .content .button.read-story td td a:active {
+.content .button.read-story td td a:hover, .content .button.read-story td td a:visited, .content .button.read-story td td a:active {
   color: #ffffff !important;
   text-decoration: none !important;
 }
@@ -231,6 +233,7 @@ h6 a:visited {
 	width: 100%;
 	max-width: 390px;
 	height: auto;
+  max-height: 90px;
 }
 .two-column.header .date td {
   width: 100%;
