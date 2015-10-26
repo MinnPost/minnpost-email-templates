@@ -251,8 +251,8 @@ h6 a:visited {
   Margin-bottom: 24px;
 }
 .content.supp .story.story-last {
-  border-bottom: none;
-  Margin-bottom: 0;
+  border-bottom: none !important;
+  Margin-bottom: 0 !important;
 }
 .footer p {
   margin-top: 10px;
