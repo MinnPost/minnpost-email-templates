@@ -52,7 +52,7 @@ p {
 	padding: 0;
 }
 a {
-  color: #1A1818; 
+  color: #1A1818;
   text-decoration: none;
 }
 a:hover { 
@@ -139,7 +139,7 @@ h3 a:active,
 h4 a:active, 
 h5 a:active, 
 h6 a:active { 
-  color: #1A1818 !important; 
+  color: #1A1818; 
 }
 h1 a:visited, 
 h2 a:visited,  
@@ -147,7 +147,7 @@ h3 a:visited,
 h4 a:visited, 
 h5 a:visited, 
 h6 a:visited { 
-  color: #1A1818 !important; 
+  color: #1A1818; 
 }
 /* end generic */
 
@@ -168,8 +168,8 @@ h6 a:visited {
 }
 .content .button.read-story td td a {
   color: #fff !important;
-  font-family: Georgia, 'Times New Roman', Times, serif !important;
-  font-size: 16px !important;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
   text-decoration: none;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -178,9 +178,9 @@ h6 a:visited {
   border: 1px solid #801019;
   display: inline-block;
 }
-.content .moreLink:after {
+/*.content .moreLink:after {
   content: " ▸";
-}
+}*/
 /* end overrides */
 
 /*Two column layout*/
@@ -245,14 +245,14 @@ h6 a:visited {
 /* end header */
 
 /* story and ads */
-.content.story .story, .content.supp .story, .content.supp {
-  border-bottom: 2px solid #cccccf !important;
+div.story, .content.supp {
+  border-bottom: 2px solid #cccccf;
   padding-bottom: 10px;
   Margin-bottom: 24px;
 }
-.content.supp .story.story-last {
-  border-bottom: none !important;
-  Margin-bottom: 0 !important;
+div.story.story-last {
+  border-bottom: none;
+  Margin-bottom: 0;
 }
 .footer p {
   margin-top: 10px;
