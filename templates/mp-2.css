@@ -13,10 +13,12 @@ table {
   color: #1a1818;
   mso-table-lspace:0pt;
   mso-table-rspace:0pt;
+  border-collapse: collapse;
 }
 td {
   padding: 0;
   Margin: 0;
+  border-collapse: collapse;
 }
 img {
 	border: 0;
