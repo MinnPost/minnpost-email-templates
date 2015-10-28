@@ -44,7 +44,7 @@ p {
 
 /* generic */
 .content .inner {
-	padding: 10px 0;
+	/*padding: 10px 0;*/
 }
 p {
 	Margin: 0 0 10px 0;
@@ -249,13 +249,17 @@ h6 a:visited {
 /* end header */
 
 /* story and ads */
-div.story, .content.supp {
+div.story .story-inner, .content.supp {
   border-bottom: 2px solid #cccccf;
-  padding-bottom: 10px;
-  Margin-bottom: 24px;
+  padding-bottom: 18px;
+  Margin-bottom: 18px;
 }
-div.story.story-last {
+div.story.story-first .story-inner {
+  padding-top: 10px;
+}
+div.story.story-last .story-inner {
   border-bottom: none;
+  padding-bottom: 0;
   Margin-bottom: 0;
 }
 .footer p {
@@ -338,10 +342,10 @@ table.more h3, table.more .h3 {
 		Margin-left: auto !important;
 	}
 
-  .content.story .ad, div.story.story-last {
+  .content.story .ad, div.story.story-last .story-inner {
 	  border-bottom: 2px solid #cccccf !important;
-	  padding-bottom: 10px !important;
-	  Margin-bottom: 10px !important;
+	  padding-bottom: 18px !important;
+	  Margin-bottom: 18px !important;
 	}
 
 }
