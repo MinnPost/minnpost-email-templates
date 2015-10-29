@@ -272,17 +272,21 @@ div.story.story-last .story-inner {
 /* end story and ads */
 
 /* more stories */
-table.more td, table.more td div.inner {
-  padding: 15px;
+table.more {
+
 }
 table.more td {
+  padding: 15px;
+}
+table.more td.inner {
   background: #f0f0f5;
   border: 1px solid #cccccf;
   width: 100%;
   max-width: 100%;
 }
-table.more td div.inner {
+table.more td.text {
   background: #ffffff;
+  padding: 15px 15px 5px 15px;
 }
 table.more h3, table.more .h3 {
   color:#1a1818;
