@@ -298,12 +298,15 @@ div.story .story-inner, .content.supp {
   padding-bottom: 18px;
   Margin-bottom: 18px;
 }
+.content.supp {
+  padding-bottom: 0;
+}
 div.story.story-first .story-inner {
   Margin-top: 18px;
 }
 div.story.story-last .story-inner {
   border-bottom: none;
-  padding-bottom: 0;
+  padding-bottom: 18px;
   Margin-bottom: 0;
 }
 .footer p {
