@@ -292,6 +292,18 @@ h6 a:visited {
 }
 /* end header */
 
+/* minnpost promo */
+div.promo {
+  Margin-top: 18px;
+  Margin-bottom: 10px;
+}
+div.promo img {
+  display: block;
+  Margin-left: auto;
+  Margin-right: auto;
+}
+/* end minnpost promo */
+
 /* story and ads */
 div.story .story-inner, .content.supp {
   border-bottom: 2px solid #cccccf;
