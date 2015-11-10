@@ -309,6 +309,11 @@ div.story.story-last .story-inner {
   padding-bottom: 18px;
   Margin-bottom: 0;
 }
+div.story .story-inner img {
+  display: block;
+  Float: left;
+  Margin: 0 10px 5px 0;
+}
 .footer p {
   Margin-top: 10px;
 }
