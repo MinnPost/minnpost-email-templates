@@ -16,6 +16,30 @@ module.exports = function(grunt) {
         }]
       }
     },
+
+    /**
+     * Sass compiling
+     * @github.com/gruntjs/grunt-contrib-sass
+     */
+    sass: {
+
+      dist: {
+        options: {
+          style: 'expanded'
+        },
+
+        files: [{
+            expand: true,        // Enable dynamic expansion.
+            cwd: 'templates',  // Src matches are relative to this path.
+            src: ['*.scss'],     // Actual pattern(s) to match.
+            dest: 'tidy/css',  // Destination path prefix.
+            ext: '.css',         // Dest filepaths will have this extension.
+        }]
+
+      }
+      
+    },
+
     processhtml: {
       dist: {
         files: [{
@@ -51,7 +75,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-processhtml');
   grunt.loadNpmTasks('grunt-premailer');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   grunt.registerTask('email', ['uncss', 'processhtml', 'premailer']);
+  
+  grunt.registerTask('emailcss', ['uncss', 'processhtml', 'premailer']);
+  grunt.registerTask('emailsass', ['sass', 'processhtml', 'premailer']);
 
 };
