@@ -1,3 +1,12 @@
+$border-color-light: #cccccf;
+$border-unit-default: 2px;
+$border-unit-button: 1px;
+$font-family-sans: Helvetica, Arial, Geneva, sans-serif;
+$body-font-size: 16px;
+$body-line-height: 20.787px;
+$body-color: #1A1818;
+$link-color: #801019;
+
 /* capitalize Margin so outlook does not strip it out */
 
 /* Basics */
@@ -7,7 +16,7 @@ body {
   min-width: 100%;
   background-color: #ffffff;
 }
-#bodyTable{
+#bodyTable {
   height:100% !important;
   Margin:0;
   padding:0;
@@ -15,8 +24,8 @@ body {
 }
 table {
   border-spacing: 0;
-  font-family: Helvetica, Arial, Geneva, sans-serif;
-  color: #1a1818;
+  font-family: $font-family-sans;
+  color: $body-color;
   mso-table-lspace:0pt;
   mso-table-rspace:0pt;
   border-collapse: collapse;
@@ -66,65 +75,70 @@ p {
   /*padding: 10px 0;*/
 }
 p {
-  Margin: 0 0 10px 0;
+  Margin: 0 0 15px 0;
   padding: 0;
 }
 a {
-  color: #1A1818;
+  color: $link-color;
   text-decoration: none;
 }
 a:hover { 
-  color: #1A1818 !important;
+  color: $link-color !important;
   text-decoration: underline !important;
 }
 a:active { 
-  color: #1A1818 !important;
+  color: $link-color !important;
   text-decoration: underline !important;
 }
 a:visited { 
-  color: #1A1818 !important;
+  color: $link-color !important;
 }
 
 h1, .h1 { 
-  color:#1a1818;
+  color: $body-color;
   display:block;
   font-family:Arial;
-  font-size:16px;
+  font-size: $body-font-size;
   font-weight:bold;
   line-height:1;
   Margin: 0 0 10px 0;
   text-align:left; 
-  font-family: Helvetica, Arial, Geneva, sans-serif;
+  font-family: $font-family-sans;
   font-weight: bold;
   text-transform: uppercase; 
 }
 h2, .h2 {
-  color:#801019;
+  color: $link-color;
   display:block;
-  font-family: Helvetica, Arial, Geneva, sans-serif;
-  font-size:16px;
+  font-size:14px;
   font-weight:bold;
   line-height:1;
-  Margin: 0 0 10px 0;
-  text-align:left;
+  Margin: 20px 0 15px 0;
+  text-align:left; 
+  font-family: $font-family-sans;
+  font-weight: bold;
+  text-transform: uppercase; 
+  border-top: $border-unit-default solid $border-color-light;
+  padding-top: 15px;
+  Margin-top: 15px;
 }
 h3, .h3 {
-  color:#1a1818;
+  color: $body-color;
   display:block;
   font-family:Arial;
-  font-size:16px;
+  font-size: $body-font-size;
   font-weight:bold;
   line-height:1.05;
   Margin: 0 0 10px 0;
   text-align:left;
-  font-family: Helvetica, Arial, Geneva, sans-serif;
+  font-family: $font-family-sans;
   font-size: 22px;
   padding: 0;
 }
 h4, .h4 {
   color:#555556;
   display:block;
-  font-family: Helvetica, Arial, Geneva, sans-serif;
+  font-family: $font-family-sans;
   font-size:10px;
   font-weight:normal;
   line-height:100%;
@@ -133,9 +147,9 @@ h4, .h4 {
   text-transform: uppercase;
 }
 h5, .h5 {
-  color:#1A1818;
+  color: $body-color;
   display:block;
-  font-family: Helvetica, Arial, Geneva, sans-serif;
+  font-family: $font-family-sans;
   font-size:10px;
   font-weight:bold;
   line-height:100%;
@@ -149,7 +163,7 @@ h3 a,
 h4 a, 
 h5 a, 
 h6 a {
-  color: #1A1818;
+  color: $body-color;
 }
 h1 a:active, 
 h2 a:active,  
@@ -157,7 +171,7 @@ h3 a:active,
 h4 a:active, 
 h5 a:active, 
 h6 a:active { 
-  color: #1A1818; 
+  color: $body-color; 
 }
 h1 a:visited, 
 h2 a:visited,  
@@ -165,7 +179,7 @@ h3 a:visited,
 h4 a:visited, 
 h5 a:visited, 
 h6 a:visited { 
-  color: #1A1818; 
+  color: $body-color; 
 }
 /* end generic */
 
@@ -176,27 +190,43 @@ h6 a:visited {
 .bodyTable td {
   padding: 0;
 }
-.bodyTable div p {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 16px;
-  line-height: 20.787px;
+.bodyTable div {
+  p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: $body-font-size;
+    line-height: $body-line-height;
+  }
+  .intro {
+    font-size: ($body-font-size * 1.1);
+    line-height: ($body-line-height * 1.2);
+  }
+  blockquote {
+    border-left: $border-unit-default solid $border-color-light;
+    Margin: 10px 10px 15px 10px;
+    padding: 0 10px 0 10px;
+  }
+  blockquote p {
+    //font-size: ($body-font-size * 0.9);
+    //line-height: ($body-line-height * 0.9);
+    color: lighten($body-color, 30%);
+  }
 }
 .content .button.read-story td td {
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: $border-unit-default;
+  -moz-border-radius: $border-unit-default;
+  border-radius: $border-unit-default;
   background-color: #801019;
 }
 .content .button.read-story td td a {
   color: #ffffff;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 16px;
+  font-size: $body-font-size;
   text-decoration: none;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  padding: 8px 12px;
-  border: 1px solid #801019;
+  -webkit-border-radius: $border-unit-default;
+  -moz-border-radius: $border-unit-default;
+  border-radius: $border-unit-default;
+  padding: 8px $border-unit-default;
+  border: $border-unit-button solid #801019;
   display: inline-block;
 }
 .content .button.read-story td td a:hover, .content .button.read-story td td a:visited, .content .button.read-story td td a:active {
@@ -230,6 +260,9 @@ h6 a:visited {
   max-width: 390px;
   Margin-right: 0;
 }
+.one-column.header .column {
+  width: 100%;
+}
 .two-column.header .column.date {
   max-width: 210px;
 }
@@ -237,7 +270,7 @@ h6 a:visited {
   width: 100%;
 }
 .two-column .contents {
-  font-size: 16px;
+  font-size: $body-font-size;
   text-align: left;
 }
 .two-column .text {
@@ -248,18 +281,18 @@ h6 a:visited {
 }
 
 /* header */
-.two-column.header {
+.two-column.header, .one-column.header {
   border-bottom: 10px solid #000;
 }
-.two-column.header table, .two-column.header td {
+.two-column.header table, .two-column.header td, .one-column.header table, .one-column.header td {
   border-collapse: collapse;
 }
-.two-column.header td {
+.two-column.header td, .one-column.header td {
   max-height: 90px;
   mso-table-lspace: 0pt;
   mso-table-rspace: 0pt;
 }
-.two-column.header .logo td {
+.two-column.header .logo td, .one-column.header .logo td {
   font-size: 0;
   vertical-align: bottom;
   max-height: 90px;
@@ -268,7 +301,7 @@ h6 a:visited {
   line-height: 0px;
   border-collapse: collapse;
 }
-.two-column.header img {
+.two-column.header img, .one-column.header img {
   width: 100%;
   max-width: 390px;
   height: auto;
@@ -282,8 +315,8 @@ h6 a:visited {
 }
 .two-column.header .date td {
   width: 100%;
-  font-family: Helvetica, Arial, Geneva, sans-serif;
-  font-size: 16px;
+  font-family: $font-family-sans;
+  font-size: $body-font-size;
   font-weight: bold;
   line-height: 100%;
   padding: 10px 0 5px 0;
@@ -306,7 +339,7 @@ div.promo img {
 
 /* story and ads */
 div.story .story-inner, .content.supp {
-  border-bottom: 2px solid #cccccf;
+  border-bottom: $border-unit-default solid $border-color-light;
   padding-bottom: 18px;
   Margin-bottom: 18px;
 }
@@ -344,7 +377,7 @@ table.more td {
 }
 table.more td.inner {
   background: #f0f0f5;
-  border: 1px solid #cccccf;
+  border: $border-unit-button solid $border-color-light;
   width: 100%;
   max-width: 100%;
 }
@@ -353,7 +386,7 @@ table.more td.text {
   padding: 15px 15px 5px 15px;
 }
 table.more h3, table.more .h3 {
-  color:#1a1818;
+  color: $body-color;
   display:block;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size:13px;
@@ -374,8 +407,8 @@ table.more h3, table.more .h3 {
   text-align: center;
 }
 .footer a {
-  color: #801019;
-  font-family: Helvetica, Arial, Geneva, sans-serif;
+  color: $link-color;
+  font-family: $font-family-sans;
   font-size: 13px;
   font-weight: bold;
   line-height: 100%;
@@ -410,7 +443,7 @@ table.more h3, table.more .h3 {
   }
 
   .content.story .ad, div.story.story-last .story-inner {
-    border-bottom: 2px solid #cccccf !important;
+    border-bottom: $border-unit-default solid $border-color-light !important;
     padding-bottom: 18px !important;
     Margin-bottom: 18px !important;
   }

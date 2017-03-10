@@ -5,6 +5,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     // Metadata.
     pkg: grunt.file.readJSON('package.json'),
+
     uncss: {
       dist: {
         files: [{
@@ -51,6 +52,7 @@ module.exports = function(grunt) {
         }]
       }
     },
+
     premailer: {
       main: {
         options: {
@@ -65,9 +67,11 @@ module.exports = function(grunt) {
         }]
       }
     },
+
     watch: {
       
     }
+    
   });
 
   // These plugins provide necessary tasks.
