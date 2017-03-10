@@ -276,7 +276,7 @@ h6 a:visited {
 
 .two-column.header .column {
   vertical-align: bottom;
-  max-width: 390px;
+  max-width: 393px;
   Margin-right: 0;
 }
 
@@ -306,10 +306,6 @@ h6 a:visited {
 }
 
 /* header */
-.two-column.header, .one-column.header {
-  border-bottom: 10px solid #000;
-}
-
 .two-column.header table, .two-column.header td, .one-column.header table, .one-column.header td {
   border-collapse: collapse;
 }
@@ -332,7 +328,7 @@ h6 a:visited {
 
 .two-column.header img, .one-column.header img {
   width: 100%;
-  max-width: 390px;
+  max-width: 393px;
   height: auto;
   max-height: 90px;
   Margin: 0;
@@ -377,10 +373,6 @@ div.story .story-inner, .content.supp {
 
 .content.supp {
   padding-bottom: 0;
-}
-
-div.story.story-first .story-inner {
-  Margin-top: 18px;
 }
 
 div.story.story-last .story-inner {
@@ -464,11 +456,6 @@ table.more h3, table.more .h3 {
 @media only screen and (max-width: 600px) {
   .two-column.header {
     border-bottom: none !important;
-  }
-
-  .two-column.header .logo td {
-    border-bottom: 10px solid #000 !important;
-    Margin-bottom: 5px !important;
   }
 
   .two-column.header .date, .two-column.header .date td {
