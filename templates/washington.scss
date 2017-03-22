@@ -352,9 +352,9 @@ div.promo img {
 
 /* story and ads */
 div.story .story-inner, .content.supp {
-  //border-bottom: $border-unit-default solid $border-color-light;
+  border-bottom: $border-unit-default solid $border-color-light;
   //padding-bottom: 18px;
-  //Margin-bottom: 18px;
+  Margin-bottom: 18px;
 }
 .content.supp {
   padding-bottom: 0;
@@ -373,7 +373,7 @@ div.story .story-inner img {
   Margin: 0 10px 5px 0;
 }
 .sponsors {
-  border-bottom: $border-unit-default solid $border-color-light;
+  //border-bottom: $border-unit-default solid $border-color-light;
   padding-bottom: 18px;
   Margin-bottom: 18px;
   p {

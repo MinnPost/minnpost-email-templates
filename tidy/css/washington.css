@@ -378,6 +378,11 @@ div.promo img {
 
 /* end minnpost promo */
 /* story and ads */
+div.story .story-inner, .content.supp {
+  border-bottom: 2px solid #cccccf;
+  Margin-bottom: 18px;
+}
+
 .content.supp {
   padding-bottom: 0;
 }
@@ -395,7 +400,6 @@ div.story .story-inner img {
 }
 
 .sponsors {
-  border-bottom: 2px solid #cccccf;
   padding-bottom: 18px;
   Margin-bottom: 18px;
 }
