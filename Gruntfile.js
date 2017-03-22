@@ -41,6 +41,25 @@ module.exports = function(grunt) {
       
     },
 
+    /**
+     * Compress .jpg/.png
+     * @github.com/gruntjs/grunt-contrib-imagemin
+     */
+    imagemin: {
+      dist: {
+        options: {
+            optimizationLevel: 3,
+            progressive: true
+        },
+        files: [{
+          expand: true, // Enable dynamic expansion.
+          cwd: 'static/images/', // Src matches are relative to this path.
+          src: '{,*/}*.{png,jpg,jpeg}', // Actual pattern(s) to match.
+          dest: 'static/images/', // Destination path prefix.
+        }],
+      }
+    },
+
     processhtml: {
       dist: {
         files: [{
@@ -80,8 +99,17 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-premailer');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   grunt.registerTask('email', ['uncss', 'processhtml', 'premailer']);
+
+  /**
+   * Image Tasks
+   * run `grunt images`
+   */
+  grunt.registerTask('images', [
+    'imagemin',         // Compress jpg/jpeg + png files
+  ]);
   
   grunt.registerTask('emailcss', ['uncss', 'processhtml', 'premailer']);
   grunt.registerTask('emailsass', ['sass', 'processhtml', 'premailer']);
