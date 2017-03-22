@@ -3,9 +3,12 @@ $border-unit-default: 2px;
 $border-unit-button: 1px;
 $font-family-sans: Helvetica, Arial, Geneva, sans-serif;
 $body-font-size: 16px;
+$small-font-size: 12px;
+$smaller-font-size: 9px;
 $body-line-height: 20.787px;
 $body-color: #1A1818;
 $link-color: #801019;
+$base-gray: #7a7a7a;
 
 /* capitalize Margin so outlook does not strip it out */
 
@@ -122,6 +125,13 @@ h2, .h2 {
   padding-top: 15px;
   Margin-top: 15px;
 }
+h2.sponsored {
+  color: #738bc0;
+  text-transform: uppercase;
+}
+.inline-sponsor {
+  text-align: center;
+}
 h3, .h3 {
   color: $body-color;
   display:block;
@@ -197,6 +207,7 @@ h6 a:visited {
     line-height: $body-line-height;
   }
   .intro {
+    //border-top: $border-unit-default solid $border-color-light;
     font-size: ($body-font-size * 1.1);
     line-height: ($body-line-height * 1.2);
   }
@@ -283,6 +294,7 @@ h6 a:visited {
 /* header */
 .two-column.header, .one-column.header {
   //border-bottom: 10px solid #000;
+  border-bottom: $border-unit-default solid $border-color-light;
 }
 .two-column.header table, .two-column.header td, .one-column.header table, .one-column.header td {
   border-collapse: collapse;
@@ -295,17 +307,18 @@ h6 a:visited {
 .two-column.header .logo td, .one-column.header .logo td {
   font-size: 0;
   vertical-align: bottom;
-  max-height: 90px;
+  max-height: 50px;
   padding: 0;
   Margin: 0;
   line-height: 0px;
   border-collapse: collapse;
+
 }
 .two-column.header img, .one-column.header img {
   width: 100%;
-  max-width: 393px;
+  max-width: 520px;
   height: auto;
-  max-height: 90px;
+  max-height: 50px;
   Margin: 0;
   padding: 0;
   line-height: 100%;
@@ -339,9 +352,9 @@ div.promo img {
 
 /* story and ads */
 div.story .story-inner, .content.supp {
-  border-bottom: $border-unit-default solid $border-color-light;
-  padding-bottom: 18px;
-  Margin-bottom: 18px;
+  //border-bottom: $border-unit-default solid $border-color-light;
+  //padding-bottom: 18px;
+  //Margin-bottom: 18px;
 }
 .content.supp {
   padding-bottom: 0;
@@ -359,11 +372,26 @@ div.story .story-inner img {
   Float: left;
   Margin: 0 10px 5px 0;
 }
+.sponsors {
+  border-bottom: $border-unit-default solid $border-color-light;
+  padding-bottom: 18px;
+  Margin-bottom: 18px;
+  p {
+    text-align: center;
+    color: $base-gray;
+    font-size: $smaller-font-size;
+    text-transform: uppercase;
+    Margin-bottom: 5px;
+  }
+  .presenting-sponsor {
+    margin-bottom: 30px;
+  }
+}
 .footer p {
   Margin-top: 10px;
 }
 .footer .address {
-  font-size: 12px;
+  font-size: $small-font-size;
   Margin-bottom: 15px;
 }
 /* end story and ads */
