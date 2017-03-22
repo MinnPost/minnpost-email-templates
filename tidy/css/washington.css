@@ -100,7 +100,6 @@ a:visited {
 h1, .h1 {
   color: #1A1818;
   display: block;
-  font-family: Arial;
   font-size: 16px;
   font-weight: bold;
   line-height: 1;
@@ -139,7 +138,6 @@ h2.sponsored {
 h3, .h3 {
   color: #1A1818;
   display: block;
-  font-family: Arial;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.05;
@@ -212,11 +210,12 @@ h6 a:visited {
 }
 
 .bodyTable div p {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 16px;
   line-height: 20.787px;
 }
 .bodyTable div .intro {
+  padding-top: 10px;
   font-size: 17.6px;
   line-height: 24.9444px;
 }
@@ -238,7 +237,7 @@ h6 a:visited {
 
 .content .button.read-story td td a {
   color: #ffffff;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 16px;
   text-decoration: none;
   -webkit-border-radius: 2px;
@@ -332,14 +331,37 @@ h6 a:visited {
 .two-column.header .logo td, .one-column.header .logo td {
   font-size: 0;
   vertical-align: bottom;
-  max-height: 50px;
-  padding: 0;
+  max-height: 68px;
+  padding: 8px 0;
   Margin: 0;
   line-height: 0px;
   border-collapse: collapse;
 }
 
-.two-column.header img, .one-column.header img {
+.two-column.header .tagline td, .one-column.header .tagline td {
+  padding: 4px 0;
+  Margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-size: 16px;
+}
+.two-column.header .tagline td p, .one-column.header .tagline td p {
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+.two-column.header .tagline td p img, .one-column.header .tagline td p img {
+  height: 1.25em;
+  line-height: 100%;
+  vertical-align: top;
+  margin-left: 4px;
+}
+
+.two-column.header .tagline.image td, .one-column.header .tagline.image td {
+  padding: 2px 0;
+}
+
+.two-column.header .logo img, .one-column.header .logo img {
   width: 100%;
   max-width: 520px;
   height: auto;
@@ -444,7 +466,7 @@ table.more td.text {
 table.more h3, table.more .h3 {
   color: #1A1818;
   display: block;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 100%;
@@ -481,10 +503,6 @@ table.more h3, table.more .h3 {
 
 /* end footer */
 @media only screen and (max-width: 600px) {
-  .two-column.header {
-    border-bottom: none !important;
-  }
-
   .two-column.header .date, .two-column.header .date td {
     text-align: left !important;
   }
