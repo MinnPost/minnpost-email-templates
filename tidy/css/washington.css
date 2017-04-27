@@ -228,14 +228,18 @@ h6 a:visited {
   color: #6a6161;
 }
 
-.content .button.read-story td td {
+.content .button {
+  margin-bottom: 8px;
+}
+
+.content .button td td {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
   background-color: #801019;
 }
 
-.content .button.read-story td td a {
+.content .button td td a {
   color: #ffffff;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 16px;
@@ -243,12 +247,12 @@ h6 a:visited {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  padding: 8px 2px;
+  padding: 8px 6px;
   border: 1px solid #801019;
   display: inline-block;
 }
 
-.content .button.read-story td td a:hover, .content .button.read-story td td a:visited, .content .button.read-story td td a:active {
+.content .button td td a:hover, .content .button td td a:visited, .content .button td td a:active {
   color: #ffffff !important;
   text-decoration: none !important;
 }
@@ -330,8 +334,11 @@ h6 a:visited {
   font-size: 14px;
 }
 .one-column.message .column td p {
-  Margin: 0;
+  Margin: 0 0 15px 0;
   padding: 0;
+}
+.one-column.message .column td p.last {
+  Margin-bottom: 0;
 }
 .one-column.message .column td a {
   font-weight: bold;

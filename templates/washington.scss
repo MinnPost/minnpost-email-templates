@@ -223,13 +223,16 @@ h6 a:visited {
     color: lighten($body-color, 30%);
   }
 }
-.content .button.read-story td td {
+.content .button {
+  margin-bottom: 8px;
+}
+.content .button td td {
   -webkit-border-radius: $border-unit-default;
   -moz-border-radius: $border-unit-default;
   border-radius: $border-unit-default;
   background-color: #801019;
 }
-.content .button.read-story td td a {
+.content .button td td a {
   color: #ffffff;
   font-family: $font-family-serif;
   font-size: $body-font-size;
@@ -237,11 +240,11 @@ h6 a:visited {
   -webkit-border-radius: $border-unit-default;
   -moz-border-radius: $border-unit-default;
   border-radius: $border-unit-default;
-  padding: 8px $border-unit-default;
+  padding: 8px 6px;
   border: $border-unit-button solid #801019;
   display: inline-block;
 }
-.content .button.read-story td td a:hover, .content .button.read-story td td a:visited, .content .button.read-story td td a:active {
+.content .button td td a:hover, .content .button td td a:visited, .content .button td td a:active {
   color: #ffffff !important;
   text-decoration: none !important;
 }
@@ -306,8 +309,11 @@ h6 a:visited {
   border-collapse: collapse;
   font-size: 14px;
   p {
-    Margin: 0;
+    Margin: 0 0 15px 0;
     padding: 0;
+    &.last {
+      Margin-bottom: 0;
+    }
   }
   a {
     font-weight: bold;
