@@ -136,16 +136,24 @@ h2.sponsored {
 }
 
 h3, .h3 {
-  color: #1A1818;
+  color: #801019;
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
-  line-height: 1.05;
-  Margin: 0 0 10px 0;
+  line-height: 1;
+  Margin: 20px 0 15px 0;
   text-align: left;
   font-family: Helvetica, Arial, Geneva, sans-serif;
-  font-size: 22px;
-  padding: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-top: 2px solid #cccccf;
+  padding-top: 15px;
+  Margin-top: 15px;
+}
+
+h3.sponsored {
+  color: #738bc0;
+  text-transform: uppercase;
 }
 
 h4, .h4 {

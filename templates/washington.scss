@@ -134,16 +134,23 @@ h2.sponsored {
   text-align: center;
 }
 h3, .h3 {
-  color: $body-color;
+  color: $link-color;
   display:block;
-  font-size: $body-font-size;
+  font-size:14px;
   font-weight:bold;
-  line-height:1.05;
-  Margin: 0 0 10px 0;
-  text-align:left;
+  line-height:1;
+  Margin: 20px 0 15px 0;
+  text-align:left; 
   font-family: $font-family-sans;
-  font-size: 22px;
-  padding: 0;
+  font-weight: bold;
+  text-transform: uppercase; 
+  border-top: $border-unit-default solid $border-color-light;
+  padding-top: 15px;
+  Margin-top: 15px;
+}
+h3.sponsored {
+  color: $sponsor-color;
+  text-transform: uppercase;
 }
 h4, .h4 {
   color:#555556;
