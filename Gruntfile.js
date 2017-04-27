@@ -101,7 +101,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
 
-  grunt.registerTask('email', ['uncss', 'processhtml', 'premailer']);
+  grunt.registerTask('email', ['sass', 'processhtml', 'premailer']);
 
   /**
    * Image Tasks
@@ -113,5 +113,6 @@ module.exports = function(grunt) {
   
   grunt.registerTask('emailcss', ['uncss', 'processhtml', 'premailer']);
   grunt.registerTask('emailsass', ['sass', 'processhtml', 'premailer']);
+  grunt.registerTask('default', ['sass', 'processhtml', 'premailer']);
 
 };

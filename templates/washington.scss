@@ -291,17 +291,39 @@ h6 a:visited {
 .two-column.supp .column {
   vertical-align: top;
 }
+/* end Two column layout*/
+
+/* message above the header */
+.one-column.message {
+  border-bottom: $border-unit-default solid $border-color-light;
+}
+.one-column.message table, .one-column.message td {
+  border-collapse: collapse;
+}
+.one-column.message .column td {
+  padding: 8px 0;
+  Margin: 0;
+  border-collapse: collapse;
+  font-size: 14px;
+  p {
+    Margin: 0;
+    padding: 0;
+  }
+  a {
+    font-weight: bold;
+  }
+}
+/* end message above header */
 
 /* header */
 .two-column.header, .one-column.header {
-  //border-bottom: 10px solid #000;
   border-bottom: $border-unit-default solid $border-color-light;
 }
 .two-column.header table, .two-column.header td, .one-column.header table, .one-column.header td {
   border-collapse: collapse;
 }
 .two-column.header td, .one-column.header td {
-  max-height: 90px;
+  max-height: 50px;
   mso-table-lspace: 0pt;
   mso-table-rspace: 0pt;
 }
