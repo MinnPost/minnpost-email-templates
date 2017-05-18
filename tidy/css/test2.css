@@ -1,0 +1,281 @@
+/*** uncss> filename: templates/forward.css ***/
+/* capitalize Margin so outlook does not strip it out */
+
+/* Basics */
+body {
+  Margin: 0;
+  padding: 0;
+  min-width: 100%;
+  background-color: #ffffff;
+}
+table {
+  border-spacing: 0;
+  font-family: Helvetica, Arial, Geneva, sans-serif;
+  color: #1a1818;
+  mso-table-lspace:0pt;
+  mso-table-rspace:0pt;
+  border-collapse: collapse;
+  Margin: 0;
+  padding: 0;
+}
+td {
+  padding: 0;
+  Margin: 0;
+  border-collapse: collapse;
+}
+img {
+  border: 0 none;
+  height:auto;
+  line-height:100%;
+  outline:none;
+  text-decoration:none;
+}
+a img {
+  border:0 none;
+}
+
+.wrapper {
+  width: 100%;
+  table-layout: fixed;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+p {
+  Margin:0;
+  padding:0;
+  Margin-bottom:0;
+}
+/* end basics */
+
+.outer {
+  Margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* generic */
+p {
+  Margin: 0 0 10px 0;
+  padding: 0;
+}
+a {
+  color: #1A1818;
+  text-decoration: none;
+}
+a:hover { 
+  color: #1A1818 !important;
+  text-decoration: underline !important;
+}
+a:active { 
+  color: #1A1818 !important;
+  text-decoration: underline !important;
+}
+a:visited { 
+  color: #1A1818 !important;
+}
+h3 {
+  color:#1a1818;
+  display:block;
+  font-family:Arial;
+  font-size:16px;
+  font-weight:bold;
+  line-height:1.05;
+  Margin: 0 0 10px 0;
+  text-align:left;
+  font-family: Helvetica, Arial, Geneva, sans-serif;
+  font-size: 22px;
+  padding: 0;
+}
+h5 {
+  color:#1A1818;
+  display:block;
+  font-family: Helvetica, Arial, Geneva, sans-serif;
+  font-size:10px;
+  font-weight:bold;
+  line-height:100%;
+  Margin: 0 0 5px 0;
+  text-align:left;
+  text-transform: uppercase;
+}
+h3 a, 
+h5 a {
+  color: #1A1818;
+}
+h3 a:active, 
+h5 a:active { 
+  color: #1A1818; 
+}
+h3 a:visited, 
+h5 a:visited { 
+  color: #1A1818; 
+}
+/* end generic */
+
+/* overrides */
+.bodyTable {
+  text-align: left;
+}
+.bodyTable td {
+  padding: 0;
+}
+.bodyTable div p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  line-height: 20.787px;
+}
+.forwardTable {
+  Margin-bottom: 18px;
+}
+.forwardTable div {
+  padding: 10px;
+  background: #f0f0f5;
+}
+.forwardTable blockquote {
+   border-left: 5px solid #ccc;
+   padding: 5px 10px;
+   margin-bottom: 1em;
+}
+.forwardTable blockquote p {
+  Margin: 0;
+  padding: 0;
+}
+.content .button.read-story td td {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #801019;
+}
+.content .button.read-story td td a {
+  color: #ffffff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  text-decoration: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 8px 12px;
+  border: 1px solid #801019;
+  display: inline-block;
+}
+.content .button.read-story td td a:hover, .content .button.read-story td td a:visited, .content .button.read-story td td a:active {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+/*.content .moreLink:after {
+  content: " ▸";
+}*/
+/* end overrides */
+
+/*Two column layout*/
+.one-column {
+  text-align: center;
+  font-size: 0;
+}
+.one-column.header .column {
+  vertical-align: bottom;
+  Margin: 0;
+}
+.contents {
+  width: 100%;
+}
+.one-column .contents {
+  font-size: 16px;
+  text-align: left;
+}
+
+/* header */
+.one-column.header {
+  border-bottom: 10px solid #000;
+}
+.one-column.header table, .one-column.header td {
+  border-collapse: collapse;
+}
+.one-column.header td {
+  max-height: 90px;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+.one-column.header .logo td {
+  font-size: 0;
+  vertical-align: bottom;
+  max-height: 90px;
+  padding: 0;
+  Margin: 0;
+  line-height: 0px;
+  border-collapse: collapse;
+}
+.one-column.header img {
+  width: 100%;
+  max-width: 390px;
+  height: auto;
+  max-height: 90px;
+  Margin: 0;
+  padding: 0;
+  line-height: 100%;
+  outline: none;
+  display: block;
+  vertical-align: bottom;
+}
+/* end header */
+
+/* minnpost promo */
+/* end minnpost promo */
+
+/* story and ads */
+div.story .story-inner {
+  border-bottom: 2px solid #cccccf;
+  padding-bottom: 18px;
+  Margin-bottom: 18px;
+}
+div.story.story-first .story-inner {
+  Margin-top: 18px;
+}
+div.story .story-inner img {
+  display: block;
+  Float: left;
+  Margin: 0 10px 5px 0;
+}
+.footer p {
+  Margin-top: 10px;
+}
+.footer .address {
+  font-size: 12px;
+  Margin-bottom: 15px;
+}
+/* end story and ads */
+
+/* more stories */
+/* end more stories */
+
+/* footer */
+.footer img {
+  display: inline;
+  float: none;
+  clear: none;
+}
+.footer p {
+  text-align: center;
+}
+.footer a {
+  color: #801019;
+  font-family: Helvetica, Arial, Geneva, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 100%;
+  Margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+.footer a.support {
+  padding-left: 15px;
+}
+/* end footer */
+
+@media only screen and (max-width: 600px) {
+  .one-column .column {
+    max-width: 90% !important;
+    Margin-right: auto !important;
+    Margin-left: auto !important;
+  }
+
+}
