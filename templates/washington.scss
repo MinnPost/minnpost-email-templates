@@ -223,6 +223,7 @@ h6 a:visited {
     border-left: $border-unit-default solid $border-color-light;
     Margin: 10px 10px 15px 10px;
     padding: 0 10px 0 10px;
+    color: lighten($body-color, 30%);
   }
   blockquote p {
     //font-size: ($body-font-size * 0.9);
