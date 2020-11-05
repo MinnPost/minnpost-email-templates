@@ -1,1 +1,28 @@
-node_modules
+# ------
+# Common
+# ------
+*~
+.DS_Store
+.svn
+.cvs
+*.bak
+*.swp
+Thumbs.db
+
+# -----------------------
+# Local Development Tools
+# -----------------------
+/node_modules
+/npm-debug.log
+
+# ---------------
+# Compiled assets
+# ---------------
+release-assets/
+dist/*
+!dist/inline.css
+!dist/embed.css
+!dist/inline.min.css
+!dist/embed.min.css
+test/**/*.html
+!test/**/*-source.html

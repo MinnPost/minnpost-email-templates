@@ -1,14 +1,39 @@
 {
-  "engines": {
-    "node": ">= 0.10.0"
+  "name": "@slicejack/bojler",
+  "version": "4.1.5",
+  "description": "Bojler is an email framework for developing responsive and lightweight email templates that will render correctly across each of the most popular email clients.",
+  "homepage": "https://bojler.slicejack.com",
+  "bugs": {
+    "url": "https://github.com/Slicejack/bojler/issues"
+  },
+  "license": "MIT",
+  "author": "Slicejack (https://github.com/Slicejack)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Slicejack/bojler.git"
+  },
+  "scripts": {
+    "gulp": "node ./node_modules/gulp/bin/gulp.js",
+    "build": "npm run gulp build",
+    "start": "npm run gulp dev",
+    "release": "npm run gulp release",
+    "assets": "npm run gulp assets"
   },
   "devDependencies": {
-    "grunt": "~1.3.0",
-    "grunt-contrib-watch": "~1.1.0",
-    "grunt-premailer": "^1.1.0",
-    "grunt-processhtml": "^0.4.2",
-    "grunt-uncss": "~0.9.1",
-    "grunt-contrib-sass": "~v2.0.0",
-    "grunt-contrib-imagemin": "^4.0.0"
+    "debug": "^4.1.1",
+    "del": "^5.1.0",
+    "event-stream": "^4.0.1",
+    "fresh": "^0.5.2",
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-stylelint": "^13.0.0",
+    "inquirer": "^7.1.0",
+    "juice": "^6.0.0",
+    "mime": "^2.4.4",
+    "stylelint": "^13.3.0"
   }
 }
